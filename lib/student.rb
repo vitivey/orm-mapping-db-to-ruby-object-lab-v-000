@@ -34,7 +34,7 @@ class Student
   end
 
   def self.first_X_students_in_grade_10(x)
-    students=0
+    students=[]
     students = self.all.select do |student|
       student.grade.to_i==10  if students.count == nil || students.count <= x
     end
