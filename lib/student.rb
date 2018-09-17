@@ -39,6 +39,7 @@ class Student
       while count <= x
       student.grade.to_i==10
       count=+1
+      end
     end
   end
 
