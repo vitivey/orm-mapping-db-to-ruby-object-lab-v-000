@@ -24,7 +24,6 @@ class Student
     # return a new instance of the Student class
     self.all.select do |student|
       student.name == name
-      binding.pry
     end
   end
 
