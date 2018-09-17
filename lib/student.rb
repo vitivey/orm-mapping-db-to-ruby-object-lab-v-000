@@ -22,7 +22,7 @@ class Student
   def self.find_by_name(name)
     # find the student in the database given a name
     # return a new instance of the Student class
-    self.all.select do |student| 
+    self.all.select do |student|
       student.name == name
       binding.pry
     end
