@@ -37,7 +37,7 @@ class Student
     students = self.all.select do |student|
       student.grade.to_i==10
     end
-    students[0..x]
+    students[0..x-1]
   end
 
   def save
