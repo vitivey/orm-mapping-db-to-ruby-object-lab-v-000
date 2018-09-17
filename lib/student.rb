@@ -37,6 +37,7 @@ class Student
     students=[]
     students = self.all.select do |student|
       student.grade.to_i==10  if students.count < x
+      binding.pry
     end
   end
 
