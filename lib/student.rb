@@ -44,6 +44,12 @@ class Student
     students = self.all.find {|student| student.grade.to_i==10}
   end
 
+  def self.all_students_in_grade_X(x)
+    self.all.select do |student|
+      student.grade.to_i==x
+    end
+  end
+  
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
