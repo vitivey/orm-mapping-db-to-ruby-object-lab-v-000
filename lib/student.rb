@@ -36,8 +36,7 @@ class Student
   def self.first_X_students_in_grade_10(x)
     count=0
     self.all.select do |student|
-      while count <= x
-      student.grade.to_i==10
+      student.grade.to_i==10 until count <=x
       count+=1
       end
     end
