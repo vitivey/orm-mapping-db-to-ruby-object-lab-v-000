@@ -41,7 +41,7 @@ class Student
   end
 
   def self.first_student_in_grade_10
-    students = self.all.find {|student| student.grade.to_i==10
+    students = self.all.find {|student| student.grade.to_i==10}
   end
 
   def save
