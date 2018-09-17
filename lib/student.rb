@@ -37,7 +37,7 @@ class Student
     students=[]
     self.all.select do |student|
       students <<  student.grade.to_i==10  if students.count < x
-      
+
     end
   end
 
