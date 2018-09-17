@@ -38,7 +38,7 @@ class Student
     self.all.select do |student|
       while count <= x
       student.grade.to_i==10
-      count=+1
+      count+=1
       end
     end
   end
