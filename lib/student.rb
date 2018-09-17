@@ -34,11 +34,8 @@ class Student
   end
 
   def self.first_X_students_in_grade_10(x)
-    count=0
     self.all.select do |student|
-      student.grade.to_i==10 until count <=x
-      count+=1
-      end
+      student.grade.to_i==10  if self.all.index(student) <= x
     end
   end
 
