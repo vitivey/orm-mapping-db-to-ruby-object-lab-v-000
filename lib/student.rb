@@ -8,7 +8,6 @@ class Student
     student.name=row[1]
     student.grade=row[2]
     student
-    binding.pry
     # create a new Student object given a row from the database
   end
 
